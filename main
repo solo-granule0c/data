@@ -1,0 +1,13 @@
+Public Class Form1
+
+    Private Sub btnGreet_Click(sender As Object, e As EventArgs) Handles btnGreet.Click
+        ' Prompt the user for their name
+        Dim userName As String = InputBox("Enter your name:", "Name Entry")
+
+        ' Display a personalized greeting
+        If Not String.IsNullOrEmpty(userName) Then
+            MessageBox.Show($"Hello, {userName}! This is a simple VB.NET application.", "Greeting")
+        End If
+    End Sub
+
+End Class
